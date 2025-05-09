@@ -11,14 +11,58 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     @Override
+    EditText edt1, edt2, edt3;
+    Button BtnAdd, BtnMinus, BtnTimes, BtnDivide;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        edt1 = findViewById(R.id.edta);
+        edt2 = findViewById(R.id.edtb);
+        edt3 = findViewById(R.id.edtc);
+        BtnAdd = findViewById(R.id.BtnAdd);
+        BtnMinus = findViewById(R.id.BtnMinus);
+        BtnTimes = findViewById(R.id.BtnTimes);
+        BtnDivide = findViewById(R.id.BtnDivide);
+        BtnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt("0"+edt1.getText());
+                int b = Integer.parseInt("0"+edt2.getText());
+
+                // TODO Auto-generated method stub
+                edt3.setText("a + b =" +(a+b));
+            }
         });
-    }
-}
+        BtnMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt("0"+edt1.getText());
+                int b = Integer.parseInt("0"+edt2.getText());
+                // TODO Auto-generated method stub
+                edt3.setText("a - b =" +(a-b));
+
+            }
+        });
+        BtnTimes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = Integer.parseInt("0"+edt1.getText());
+                int b = Integer.parseInt("0"+edt2.getText());
+                // TODO Auto-generated method stub
+                edt3.setText("a * b =" +(a*b));
+            }
+        });
+        BtnDivide.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                int a = Integer.parseInt("0"+edt1.getText());
+                int b = Integer.parseInt("0"+edt2.getText());
+                if (b == 0)
+                {
+                    edt3.setText("B phai khac 0");
+                }
+
+            }
