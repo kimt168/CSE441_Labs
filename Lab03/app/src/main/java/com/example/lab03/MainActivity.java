@@ -66,3 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
+            else
+            {
+                edt3.setText("a / b =" +(a/b));
+            }
+        }
+    });
+}
