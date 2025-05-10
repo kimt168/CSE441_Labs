@@ -13,7 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
     EditText edt1, edt2, edt3;
     Button BtnAdd, BtnMinus, BtnTimes, BtnDivide;
     @Override
@@ -67,12 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 {
                     edt3.setText("B phai khac 0");
                 }
-
+                else
+                {
+                    edt3.setText("a / b =" +(a/b));
+                }
             }
-            else
-            {
-                edt3.setText("a / b =" +(a/b));
-            }
-        }
-    });
+        });
+    }
 }
+
