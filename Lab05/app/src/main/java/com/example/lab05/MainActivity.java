@@ -1,4 +1,5 @@
-package com.example.bmi;
+package com.example.lab05;
+
 import java.text.DecimalFormat;
 import android.os.Bundle;
 import android.app.Activity;
@@ -16,42 +17,42 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnBmi= findViewById(R.id.btnBmi);
-        edtName=findViewById(R.id.edtten);
-        editChieucao= findViewById(R.id.edtchieucao);
-        editCannang= findViewById(R.id.edtcannang);
-        editBMI= findViewById(R.id.edtBMI);
-        editChandoan= findViewById(R.id.edtChuanDoan);
-        btnChandoan.setOnClickListener(new View.OnClickListener() {
+        edtName=findViewById(R.id.edtName);
+        edtHeight= findViewById(R.id.edtHeight);
+        edtWeight= findViewById(R.id.edtWeight);
+        edtBmi= findViewById(R.id.edtBmi);
+        edtDiagnosis= findViewById(R.id.edtDiagnosis);
+        btnBmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                double H=Double.parseDouble(editChieucao.getText()+"");
-                double W=Double.parseDouble(editCannang.getText()+"");
+                double H=Double.parseDouble(edtHeight.getText()+"");
+                double W=Double.parseDouble(edtWeight.getText()+"");
                 double BMI=W/Math.pow(H,2);
-                String chandoan="";
+                String diagnosis="";
                 if(BMI<18)
                 {
-                    chandoan="Bạn gầy";
+                    diagnosis="Bạn gầy";
                 }
                 else if(BMI<=24.9)
                 {
-                    chandoan="Bạn bình thường";
+                    diagnosis="Bạn bình thường";
                 }
                 else if(BMI<=29.9)
                 {
-                    chandoan="Bạn béo phì độ 1";
+                    diagnosis="Bạn béo phì độ 1";
                 }
                 else if(BMI<=34.9)
                 {
-                    chandoan="Bạn béo phì độ 2";
+                    diagnosis="Bạn béo phì độ 2";
                 }
                 else
                 {
-                    chandoan="Bạn béo phì độ 3";
+                    diagnosis="Bạn béo phì độ 3";
                 }
                 DecimalFormat dcf=new DecimalFormat("#.0");
-                editBMI.setText(dcf.format(BMI));
-                editChandoan.setText(chandoan);
+                edtBmi.setText(dcf.format(BMI));
+                edtDiagnosis.setText(diagnosis);
             }
         });
     }
