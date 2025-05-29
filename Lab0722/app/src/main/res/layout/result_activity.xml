@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    app:layout_anchorGravity="center">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:text="TextView" />
+        android:gravity="center"
+        android:text="Kết quả giải phương trình bậc 1" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="94dp"
-        android:text="TextView" />
+        android:gravity="center"
+        android:text="Kết quả" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button" />
