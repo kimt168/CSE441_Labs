@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent myintent = new Intent(MainActivity.this,ketqua.class);
+                Intent myintent = new Intent(MainActivity.this,Result.class);
                 Bundle bundle1 = new Bundle();
                 int a = Integer.parseInt(txta.getText()+"");
                 int b = Integer.parseInt(txtb.getText()+"");
