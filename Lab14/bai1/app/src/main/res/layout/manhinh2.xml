@@ -20,13 +20,13 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/edtb"
+        android:id="@+id/edtbbb"
         android:layout_width="match_parent"
         android:layout_height="92dp"
         android:text="Nhập b" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtb"
         android:layout_width="match_parent"
         android:layout_height="91dp"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:text="" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btncong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_input_add" />
