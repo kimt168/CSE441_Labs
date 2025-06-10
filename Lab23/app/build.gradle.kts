@@ -30,7 +30,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
-
+android {
+    useLibrary("org.apache.http.legacy")
+}
 dependencies {
 
     implementation(libs.appcompat)
