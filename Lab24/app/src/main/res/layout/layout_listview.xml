@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2,3,4">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtBuyTM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buy TM:"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/txtBuyTM_16220"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="16220"
+            android:textColor="#FF0000"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/txtSellTM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sell TM:"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/txtSellTM_16370"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="16370"
+            android:textColor="#FF0000"
+            android:gravity="left" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtType_USD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USD"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtBuyCK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buy CK:"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/txtBuyCK_22920"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="22920"
+            android:textColor="#FF0000"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/txtSellCK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sell CK:"
+            android:gravity="right" />
+
+        <TextView
+            android:id="@+id/txtSellCK_23170"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="23170"
+            android:textColor="#FF0000"
+            android:gravity="left" />
+    </TableRow>
+</TableLayout>
