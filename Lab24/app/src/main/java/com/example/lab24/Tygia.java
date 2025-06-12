@@ -6,81 +6,77 @@ public class Tygia {
     private String type;
     private String imageurl;
     private Bitmap bitmap;
-    private String muatienmat;
-    private String muack;
-    private String bantuenmat;
-    private String banck;
+    private String buyCash;
+    private String buyCheck;
+    private String sellCash;
+    private String sellCheck;
 
     public Tygia() {
     }
 
-    public Tygia(String type, String imageurl, Bitmap bitmap, String muatienmat, String muack, String bantuenmat, String banck) {
+    public Tygia(String type, String imageurl, Bitmap bitmap, String buyCash, String buyCheck, String sellCash, String sellCheck) {
         this.type = type;
         this.imageurl = imageurl;
         this.bitmap = bitmap;
-        this.muatienmat = muatienmat;
-        this.muack = muack;
-        this.bantuenmat = bantuenmat;
-        this.banck = banck;
-
-
+        this.buyCash = buyCash;
+        this.buyCheck = buyCheck;
+        this.sellCash = sellCash;
+        this.sellCheck = sellCheck;
     }
 
+    public String getType() {
+        return type;
+    }
 
-public String getType() {
-    return type;
-}
+    public String getImageurl() {
+        return imageurl;
+    }
 
-public String getImageurl() {
-    return imageurl;
-}
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
 
-public Bitmap getBitmap() {
-    return bitmap;
-}
+    public String getBuyCash() {
+        return buyCash;
+    }
 
-public String getMuatienmat() {
-    return muatienmat;
-}
+    public String getBuyCheck() {
+        return buyCheck;
+    }
 
-public String getMuack() {
-    return muack;
-}
+    public String getSellCash() {
+        return sellCash;
+    }
 
-public String getBantuenmat() {
-    return bantuenmat;
-}
+    public String getSellCheck() {
+        return sellCheck;
+    }
 
-public String getBanck() {
-    return banck;
-}
+    public void setType(String type) {
+        this.type = type;
+    }
 
-public void setType(String type) {
-    this.type = type;
-}
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
+    }
 
-public void setImageurl(String imageurl) {
-    this.imageurl = imageurl;
-}
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
 
-public void setBitmap(Bitmap bitmap) {
-    this.bitmap = bitmap;
-}
+    public void setBuyCash(String buyCash) {
+        this.buyCash = buyCash;
+    }
 
-public void setMuatienmat(String muatienmat) {
-    this.muatienmat = muatienmat;
-}
+    public void setBuyCheck(String buyCheck) {
+        this.buyCheck = buyCheck;
+    }
 
-public void setMuack(String muack) {
-    this.muack = muack;
-}
+    public void setSellCash(String sellCash) {
+        this.sellCash = sellCash;
+    }
 
-public void setBantuenmat(String bantuenmat) {
-    this.bantuenmat = bantuenmat;
-}
-
-public void setBanck(String banck) {
-
-    this.banck = banck;
-}
+    public void setSellCheck(String sellCheck) {
+        this.sellCheck = sellCheck;
+    }
 }

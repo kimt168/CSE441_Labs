@@ -27,7 +27,7 @@ public class MyArrayAdapter extends ArrayAdapter<Tygia> {
         LayoutInflater inflater = this.context.getLayoutInflater();
         View item = inflater.inflate(this.resource, null);
         Tygia tygia = this.objects.get(position);
-        ImageView imgHinh = (ImageView) item.findViewById(R.id.imgHinh);
+        ImageView imgHinh = (ImageView) item.findViewById(R.id.imghinh);
         TextView txtType = (TextView) item.findViewById(R.id.txtType);
         TextView txtBuyTM = (TextView) item.findViewById(R.id.txtBuyTM);
         TextView txtSellTM = (TextView) item.findViewById(R.id.txtSellTM);
@@ -35,10 +35,10 @@ public class MyArrayAdapter extends ArrayAdapter<Tygia> {
         TextView txtSellCK = (TextView) item.findViewById(R.id.txtSellCK);
         imgHinh.setImageBitmap(tygia.getBitmap());
         txtType.setText(tygia.getType());
-        txtBuyTM.setText(tygia.getMuatienmat());
-        txtSellTM.setText(tygia.getBantuenmat());
-        txtBuyCK.setText(tygia.getMuack());
-        txtSellCK.setText(tygia.getBanck());
+        txtBuyTM.setText(tygia.getBuyCash());    // Updated from getMuatienmat()
+        txtSellTM.setText(tygia.getSellCash());  // Updated from getBantuenmat()
+        txtBuyCK.setText(tygia.getBuyCheck());   // Updated from getMuack()
+        txtSellCK.setText(tygia.getSellCheck()); // Updated from getBanck()
 
         return item;
     }

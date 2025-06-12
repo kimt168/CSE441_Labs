@@ -8,8 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="TextView" />
+
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/lv1"
 
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
